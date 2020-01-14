@@ -1,0 +1,16 @@
+<app-content-separator>
+    <div class="card mt-3 main-content">
+        <div class="card-header bg-white">
+            Home
+        </div>
+        <div class="card-body">
+            <div class="posts-article-wrapper"
+                 *ngFor="let post of posts$ | async"
+                 (click)="showDetails(post)">
+                <article>
+                    {{post.title}}
+                </article>
+            </div>
+        </div>
+    </div>
+</app-content-separator>

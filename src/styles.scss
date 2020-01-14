@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+/* Overriding Bootstrap Container Width*/
+
+/* Overriding maximum width to be 1280px */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px
+) !default;
+
+/* Overriding mobile breakpoint to be 640px*/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 640px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+/* Bootstrap and its default variables*/
+@import "node_modules/bootstrap/scss/bootstrap";

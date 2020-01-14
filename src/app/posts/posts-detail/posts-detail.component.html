@@ -1,0 +1,27 @@
+<app-content-separator>
+
+    <div class="card main-content">
+        <div class="card-header bg-white">
+            <button class="btn btn-sm btn-secondary mr-1 float-right"
+                    (click)="showHomePage()">
+                Back
+            </button>
+            <strong>Post</strong>
+        </div>
+        <div class="card-body">
+            <dt>{{post?.title}}</dt>
+            <dd>
+                <div [innerHtml]="post?.body"></div>
+            </dd>
+        </div>
+    </div>
+
+    <div class="card context">
+        <div class="card-header bg-white">
+            <strong>Context</strong>
+        </div>
+        <div class="card-body">
+
+        </div>
+    </div>
+</app-content-separator>
